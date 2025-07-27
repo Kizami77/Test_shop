@@ -1,0 +1,44 @@
+.proizvod {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  max-width: 600px;
+}
+.proizvod__naslov {
+  font-size: 1.5rem;
+  color: #333;
+}
+.proizvod__opis {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+.proizvod__cena {
+  font-weight: bold;
+  color: #444;
+}
+.proizvod__kolicina {
+  color: #555;
+}
+.proizvod__status {
+  font-weight: bold;
+}
+.proizvod__status--ima {
+  color: green;
+}
+.proizvod__status--nema {
+  color: red;
+}
+.proizvod__slika {
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.proizvod__slika-nedostupna {
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/*# sourceMappingURL=style_lista.css.map */

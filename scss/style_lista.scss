@@ -1,0 +1,57 @@
+
+$boja-pozadina: #f9f9f9;
+$boja-okvira: #ccc;
+$boja-ima: green;
+$boja-nema: red;
+
+.proizvod {
+  background-color: $boja-pozadina;
+  border: 1px solid $boja-okvira;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  max-width: 600px;
+
+  &__naslov {
+    font-size: 1.5rem;
+    color: #333;
+  }
+
+  &__opis {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+
+  &__cena {
+    font-weight: bold;
+    color: #444;
+  }
+
+  &__kolicina {
+    color: #555;
+  }
+
+  &__status {
+    font-weight: bold;
+
+    &--ima {
+      color: $boja-ima;
+    }
+
+    &--nema {
+      color: $boja-nema;
+    }
+  }
+
+  &__slika {
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  &__slika-nedostupna {
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+}
