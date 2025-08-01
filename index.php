@@ -1,5 +1,10 @@
 <?php
 
+  if(session_status() == PHP_SESSION_NONE) {
+      session_start();
+   }
+
+    session_destroy();
 ?>
 
 <!<!doctype html>
@@ -14,12 +19,25 @@
      <header>
          <nav>
          <ul>
+             <li><a href="index.php">Glavna </a> </li>
              <li><a href="registracija.php">Registruj se</a> </li>
-             <li><a href="login.php">Uloguj se</a></li>
+
          </nav>
          </ul>
      </header>
+     <div id="main_header">
 
+       <?php if( isset($_SESSION['ulogovan']) ) : ?>
+
+           <li><a href="logout.php">Logout</a></li>
+
+       <?php else: ?>
+
+          <li><a href="login.php">Uloguj se</a></li>
+
+     <?php endif; ?>
+
+     </div>
 <!-- main-->
   <main>
       <section>

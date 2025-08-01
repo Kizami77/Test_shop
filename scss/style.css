@@ -29,6 +29,20 @@ nav ul li a:hover {
   color: darkorange;
 }
 
+#main_header {
+  text-align: left;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+#main_header li a {
+  text-decoration: none;
+  list-style: none;
+  color: darkgreen;
+}
+
 main {
   display: flex;
   height: 100vh;

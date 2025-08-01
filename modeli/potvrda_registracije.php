@@ -32,6 +32,6 @@ require_once "baza.php";
        $baza->query("INSERT INTO   korisnici(ime,email,lozinka) VALUES ('$ime','$email','$password')");
    }
 
-
+    header("location:index.php");
 
 

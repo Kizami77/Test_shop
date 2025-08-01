@@ -1,6 +1,11 @@
 <?php
 
+
 global $baza;
+
+if(session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 if( !isset($_POST['email']) || empty($_POST['email']) )
       {
         die("Niste uneli email/pogresan email");
@@ -25,11 +30,24 @@ if( !isset($_POST['email']) || empty($_POST['email']) )
 
      if($proveraSifre == true)
      {
-         echo "Dobrodosli";
+         if(session_status() == PHP_SESSION_NONE) {
+             session_start();
+         }
+
+         $_SESSION['ulogovan'] = true;
+         $_SESSION['user_id'] = $korisnik['id'];
+
+        header('Location:../index.php');
      }
     else {
+
         echo "Korisnik nije pronadjen";
     }
+
+
+
+
+
 
 
 
